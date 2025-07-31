@@ -169,7 +169,7 @@
           const actionTd = document.createElement('td');
 
           const icsBtn = document.createElement('button');
-          icsBtn.textContent = "Download kalender-invite";
+          icsBtn.textContent = "Download kalender-invitation";
           icsBtn.className = "action-btn";
           icsBtn.addEventListener('click', () => handleICS(row));
 
@@ -193,8 +193,8 @@
         alert("Kan ikke forstå datoen: " + dateStr);
         return;
       }
-      const dtStart = formatICSDate(date, 18, 0);
-      const dtEnd = formatICSDate(date, 21, 0);
+      const dtStart = formatICSDate(date, 17, 0);
+      const dtEnd = formatICSDate(date, 20, 0);
       const summary = "Søndagsmiddag hos " + host;
       const description = (note ? note+"\n" : "") + "Vært: " + host;
       const uid = "sondagsmiddag-" + dtStart + "@" + location.hostname;
